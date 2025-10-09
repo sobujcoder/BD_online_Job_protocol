@@ -1,0 +1,23 @@
+<svg width="1200" height="627" viewBox="0 0 1200 627" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="627" fill="#f5f7fa"></rect>
+  <rect x="60" y="60" width="1080" height="507" rx="20" fill="#ffffff" stroke="#d1d9e6" stroke-width="2"></rect>
+  
+  <!-- Title -->
+  <text x="600" y="160" font-size="48" font-family="Arial, sans-serif" fill="#0b3d91" text-anchor="middle" font-weight="bold">
+    Join Our Team – Apply Now!
+  </text>
+  
+  <!-- Subtext -->
+  <text x="600" y="220" font-size="24" font-family="Arial, sans-serif" fill="#333" text-anchor="middle">
+    BD Online Job Protocol is hiring skilled professionals
+  </text>
+  <text x="600" y="255" font-size="24" font-family="Arial, sans-serif" fill="#333" text-anchor="middle">
+    to shape the future of online work.
+  </text>
+  
+  <!-- Button -->
+  <rect x="500" y="350" width="200" height="60" rx="10" fill="#0b3d91"></rect>
+  <text x="600" y="390" font-size="24" font-family="Arial, sans-serif" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">
+    Apply Now
+  </text>
+</svg>

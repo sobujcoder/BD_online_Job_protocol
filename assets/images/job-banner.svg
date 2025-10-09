@@ -1,0 +1,84 @@
+<svg width="1200" height="627" viewBox="0 0 1200 627" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pulse {
+      animation: pulse 1.5s infinite;
+      transform-origin: center;
+    }
+
+    .slideIn {
+      animation: slideIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    .glowButton:hover {
+      filter: drop-shadow(0 0 10px #ef4444);
+      cursor: pointer;
+    }
+
+    .lineAnim {
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: dash 3s linear infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-50px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="627" fill="#ffffff"></rect>
+
+  <!-- Decorative Line Background -->
+  <line x1="100" y1="600" x2="1100" y2="600" stroke="#fcd34d" stroke-width="2" class="lineAnim"></line>
+  <line x1="100" y1="620" x2="1100" y2="620" stroke="#fcd34d" stroke-width="2" class="lineAnim" style="animation-delay: 1s;"></line>
+
+  <!-- Megaphone Icon -->
+  <g transform="translate(850,100) scale(1.2)" class="pulse">
+    <ellipse cx="60" cy="60" rx="40" ry="40" fill="#d1d5db" stroke="#111" stroke-width="6"></ellipse>
+    <rect x="35" y="55" width="60" height="20" fill="#c53030" transform="rotate(-20,60,60)"></rect>
+    <line x1="100" y1="20" x2="130" y2="10" stroke="#ef4444" stroke-width="4"></line>
+    <line x1="100" y1="60" x2="135" y2="60" stroke="#ef4444" stroke-width="4"></line>
+    <line x1="100" y1="100" x2="130" y2="110" stroke="#ef4444" stroke-width="4"></line>
+  </g>
+
+  <!-- Main Text -->
+  <text x="100" y="160" font-size="56" font-family="Arial, sans-serif" fill="#ef4444" font-weight="bold" class="slideIn">
+    JOB
+  </text>
+  <text x="100" y="210" font-size="36" font-family="Arial, sans-serif" fill="#000" class="slideIn" style="animation-delay: 0.2s;">
+    VACANCY
+  </text>
+  <text x="100" y="280" font-size="44" font-family="Arial, sans-serif" fill="#f472b6" font-weight="bold" class="slideIn" style="animation-delay: 0.4s;">
+    — WE’RE —
+  </text>
+  <text x="100" y="340" font-size="72" font-family="Arial, sans-serif" fill="#111" font-weight="bold" class="slideIn" style="animation-delay: 0.6s;">
+    HIRING
+  </text>
+
+  <!-- Apply Button -->
+  <a href="#" class="glowButton">
+    <rect x="90" y="380" width="380" height="60" rx="10" fill="#ef4444"></rect>
+    <text x="280" y="420" text-anchor="middle" font-size="28" font-family="Arial, sans-serif" fill="#fff" font-weight="bold">
+      JOIN US
+    </text>
+  </a>
+
+  <!-- Company Name -->
+  <text x="100" y="500" font-size="24" font-family="Arial, sans-serif" fill="#6b7280">
+    BD Online Job Protocol
+  </text>
+</svg>
